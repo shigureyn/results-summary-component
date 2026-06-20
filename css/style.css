@@ -59,6 +59,7 @@
   --space-score-end: clamp(1.5rem, 1.25rem + 0.8vw, 1.75rem);
   --space-rating-end: clamp(0.5rem, 0.35rem + 0.6vw, 0.875rem);
   --space-item-padding: clamp(0.875rem, 0.75rem + 0.5vw, 1rem);
+  --space-score-max-start: clamp(0.375rem, 0.3rem + 0.3vw, 0.5rem);
 }
 
 *,
@@ -173,7 +174,7 @@ button {
 
 .score-max {
   display: block;
-  margin-block-start: 0.5rem;
+  margin-block-start: var(--space-score-max-start);
   font-size: var(--fs-score-max);
   font-weight: 700;
   color: var(--color-score-max);

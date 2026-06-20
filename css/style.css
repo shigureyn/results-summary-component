@@ -15,6 +15,18 @@
   --color-pale-blue: hsl(221, 100%, 96%);
   --color-light-lavender: hsl(241, 100%, 89%);
   --color-dark-gray-blue: hsl(224, 30%, 27%);
+  --color-gradient-result-start: hsl(252, 100%, 67%);
+  --color-gradient-result-end: hsl(241, 81%, 54%);
+  --color-gradient-score-start: hsla(256, 72%, 46%, 1);
+  --color-gradient-score-end: hsla(241, 72%, 46%, 0);
+  --color-score-max: hsla(241, 100%, 89%, 0.7);
+  --color-summary-score-max: hsla(224, 30%, 27%, 0.5);
+  --color-reaction-bg: hsla(0, 100%, 67%, 0.08);
+  --color-memory-bg: hsla(39, 100%, 56%, 0.08);
+  --color-verbal-bg: hsla(166, 100%, 37%, 0.08);
+  --color-visual-bg: hsla(234, 85%, 45%, 0.08);
+  --color-card-shadow: hsla(224, 30%, 27%, 0.15);
+  --color-attribution-link: hsl(228, 45%, 44%);
   --gradient-result: linear-gradient(
     to bottom,
     hsl(252, 100%, 67%),
@@ -165,7 +177,7 @@ button {
   margin-block-start: 0.5rem;
   font-size: var(--fs-score-max);
   font-weight: 700;
-  color: hsla(241, 100%, 89%, 0.7);
+  color: var(--color-score-max);
 }
 
 .results-card__rating {
@@ -234,22 +246,22 @@ button {
 
 .summary-item__reaction {
   color: var(--color-light-red);
-  background-color: hsla(0, 100%, 67%, 0.08);
+  background-color: var(--color-reaction-bg);
 }
 
 .summary-item__memory {
   color: var(--color-orangey-yellow);
-  background-color: hsla(39, 100%, 56%, 0.08);
+  background-color: var(--color-memory-bg);
 }
 
 .summary-item__verbal {
   color: var(--color-green-teal);
-  background-color: hsla(166, 100%, 37%, 0.08);
+  background-color: var(--color-verbal-bg);
 }
 
 .summary-item__visual {
   color: var(--color-cobalt-blue);
-  background-color: hsla(234, 85%, 45%, 0.08);
+  background-color: var(--color-visual-bg);
 }
 
 .summary-score {
@@ -267,7 +279,7 @@ button {
 
 .summary-score__max {
   font-weight: 700;
-  color: hsla(224, 30%, 27%, 0.5);
+  color: var(--color-summary-score-max);
 }
 
 .summary-button {
@@ -297,7 +309,7 @@ button {
   text-align: center;
 }
 .attribution-link {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-attribution-link);
 }
 
 @media (hover: hover) {
@@ -330,7 +342,7 @@ button {
     grid-template-columns: 1fr 1fr;
     border-radius: var(--border-radius-card);
     overflow: hidden;
-    box-shadow: 0 1.5rem 3rem hsla(224, 30%, 27%, 0.15);
+    box-shadow: 0 1.5rem 3rem var(--color-card-shadow);
   }
 
   .results-card__result {

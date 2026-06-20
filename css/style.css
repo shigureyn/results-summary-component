@@ -314,7 +314,7 @@ button {
     max-inline-size: 46rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 2rem;
+    border-radius: clamp(1.5rem, 1rem + 2vw, 2rem);
     overflow: hidden;
     box-shadow: 0 1.5rem 3rem var(--color-card-shadow);
   }

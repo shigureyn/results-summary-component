@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-* Solution URL: [Add solution URL here](https://github.com/shigureyn/results-summary-component)
-* Live Site URL: [Add live site URL here](https://shigureyn.github.io/results-summary-component/)
+* Solution URL: https://github.com/shigureyn/results-summary-component
+* Live Site URL: https://shigureyn.github.io/results-summary-component/
 
 ## My process
 

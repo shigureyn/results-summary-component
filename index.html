@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
+  <title>Results summary</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="results-card" aria-labelledby="results-title">
+      <h1 class="sr-only" id="results-title">Test results summary</h1>
+
+      <div class="results-card__result">
+        <h2 class="results-card__title">Your Result</h2>
+
+        <div class="score" aria-label="Your score is 76 out of 100">
+          <strong class="score-value">76</strong>
+          <span class="score-max">of 100</span>
+        </div>
+
+        <p class="results-card__rating">Great</p>
+
+        <p class="results-card__description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+
+      <div class="results-card__summary">
+        <h2 class="summary-title">Summary</h2>
+
+        <ul class="summary-list">
+          <!-- <li class="summary-item summary-item__reaction">
+            <div class="summary-category">
+              <img class="summary-icon" src="images/icon-reaction.svg" alt="" aria-hidden="true">
+              <span class="summary-name">Reaction</span>
+            </div>
+            <p class="summary-score">
+              <strong class="summary-score__value">80</strong>
+              <span class="summary-score__max">/ 100</span>
+            </p>
+          </li>
+
+          <li class="summary-item summary-item__memory">
+            <div class="summary-category">
+              <img class="summary-icon" src="images/icon-memory.svg" alt="" aria-hidden="true">
+              <span class="summary-name">Memory</span>
+            </div>
+
+            <p class="summary-score">
+              <strong class="summary-score__value">92</strong>
+              <span class="summary-score__max">/ 100</span>
+            </p>
+          </li>
+
+          <li class="summary-item summary-item__verbal">
+            <div class="summary-category">
+              <img class="summary-icon" src="images/icon-verbal.svg" alt="" aria-hidden="true">
+              <span class="summary-name">Verbal</span>
+            </div>
+
+            <p class="summary-score">
+              <strong class="summary-score__value">61</strong>
+              <span class="summary-score__max">/ 100</span>
+            </p>
+          </li>
+
+          <li class="summary-item summary-item__visual">
+            <div class="summary-category">
+              <img class="summary-icon" src="images/icon-visual.svg" alt="" aria-hidden="true">
+
+              <span class="summary-name">Visual</span>
+            </div>
+
+            <p class="summary-score">
+              <strong class="summary-score__value">72</strong>
+              <span class="summary-score__max">/ 100</span>
+            </p>
+          </li>
+          -->
+        </ul>
+
+        <button class="summary-button" type="button">
+          Continue
+        </button>
+      </div>
+    </section>
+
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="attribution-link">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/shigureyn" class="attribution-link">Shigureyn</a>.
+  </footer>
+</body>
+
+</html>
